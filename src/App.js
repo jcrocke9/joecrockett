@@ -1,38 +1,49 @@
 import React, { Component } from 'react';
-import { Router, Route, Link, IndexRoute, hashHistory, browserHistory } from 'react-router';
-
+import {
+    BrowserRouter as Router,
+    Route,
+    Link
+} from 'react-router-dom';
 import { Home } from './components/Home';
 import { Resume } from './components/Resume';
 import { About } from './components/About';
 
-export default class App extends Component {
+class App extends Component {
     render() {
         return (
-            <Router history={hashHistory} >
-                <Route path='/' component={Container} >
-                    <IndexRoute component={Home} />
-                    <Route path='/resume' component={Resume} />
-                    <Route path='/about' component={About} />
-                    <Route path='*' component={NotFound} />
-                </Route>
+            <Router>
+                <div>
+                    <nav className="navbar navbar-default">
+                        <div className="container-fluid">
+
+                            <div className="navbar-header">
+                                <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span className="sr-only">Toggle navigation</span>
+                                    <span className="icon-bar"></span>
+                                    <span className="icon-bar"></span>
+                                    <span className="icon-bar"></span>
+                                </button>
+                                <a className="navbar-brand" href="#">Joe</a>
+                            </div>
+
+
+                            <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul className="nav navbar-nav">
+                                    <li><Link to="/">Home</Link></li>
+                                    <li><Link to="/about">About</Link></li>
+                                    <li><Link to="/resume">Resume</Link></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/about" component={About} />
+                    <Route path="/resume" component={Resume} />
+                </div>
             </Router>
+
         );
     }
 }
 
-const NotFound = () => (<h1>404.. The page is not found!</h1>);
-
-const Nav = () => (
-    <div>
-        <Link to='/'>Home</Link>
-        <Link to='/resume'>Resume</Link>
-        <Link to='/about'>About</Link>
-    </div>
-)
-
-const Container = (props) => (
-    <div>
-        <Nav />
-        {props.children}
-    </div>
-)
+export default App;
