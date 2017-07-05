@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export class Resume extends Component {
 
-    linkedIn() {window.location.href="https://www.linkedin.com/in/josephpcrockett/"}
+    linkedIn() {window.location.href="https://www.linkedin.com/in/josephpcrockett/";}
 
     render() {
         return (
