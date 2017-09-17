@@ -23,7 +23,7 @@ class App extends Component {
                                     <span className="icon-bar"></span>
                                     <span className="icon-bar"></span>
                                 </button>
-                                <a className="navbar-brand" href="#">Joe</a>
+                                <a className="navbar-brand" >Joe</a>
                             </div>
 
 

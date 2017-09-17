@@ -10,8 +10,8 @@
   "author": "Joe Crockett",
   "license": "ISC",
   "dependencies": {
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
     "react-router-dom": "^4.1.1",
     "react-scripts": "^1.0.10"
   },
@@ -20,5 +20,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "webpack": "^2.6.1"
   }
 }
