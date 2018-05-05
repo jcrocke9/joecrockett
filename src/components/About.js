@@ -7,6 +7,7 @@ export class About extends Component {
                 <div className="bs-docs-header" id="content" tabIndex="-1">
                     <div className="container">
                         <h1>About Joe</h1>
+                        <p className="lead">I have developed business process tools and applications on SharePoint since 2006. I've worked in the private sector, metropolitan city government, and federal government contracting.</p>
                     </div>
                 </div>
                 <div className="container bs-docs-container">
