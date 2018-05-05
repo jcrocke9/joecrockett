@@ -34,7 +34,7 @@ export class Home extends Component {
                         <h2 className="bs-docs-featurette-title">Joe Crockett</h2>
                         <hr className="half-rule" />
 
-                        <p className="lead">The SharePoint Framework is an exiting new opportunity for modern web development. I see tremendous opportunities for React to engage audiences with elegant and interactive user interfaces.</p>
+                        <p className="lead">The SharePoint Framework is an exciting new opportunity for modern web development. I see tremendous opportunities for React to engage audiences with elegant and interactive user interfaces.</p>
                     </div>
                     <div >
                         <WorldMap />
