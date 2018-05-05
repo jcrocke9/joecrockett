@@ -32,7 +32,7 @@ class App extends Component {
                                     <ul className="nav navbar-nav">
                                         <li><Link to="/">Home</Link></li>
                                         <li><Link to="/about">About</Link></li>
-                                        <li><Link to="/resume">Resume</Link></li>
+                                        <li><Link to="/resume">Resume &amp; Work</Link></li>
                                     </ul>
                                 </div>
                             </div>
