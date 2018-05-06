@@ -30,9 +30,6 @@ export class About extends Component {
                         <div className="col-md-9">
                             <ul className="list-group">
                                 <li className="list-group-item">This website is an ongoing portfolio of front-end development projects and prototypes.</li>
-                                <li className="list-group-item">It's designed exclusively using Bootstrap.</li>
-                                <li className="list-group-item">Its toolchain includes Node.js, NPM, Webpack, and built using React.</li>
-                                <li className="list-group-item">It's run from Amazon.</li>
                                 <li className="list-group-item">This website will evolve with my further work.</li>
                             </ul>
                         </div>

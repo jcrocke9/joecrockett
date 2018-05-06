@@ -1,32 +1,7 @@
 import React, { Component } from 'react';
-import 'whatwg-fetch';
-import WorldMap from './WorldMap';
-
-
-let p1 = new Promise((resolve, reject) => {
-    const url = 'https://public-api.wordpress.com/rest/v1.1/sites/jcrocke9.wordpress.com/posts/19?context=display';
-    const xhr = new XMLHttpRequest();
-    xhr.open("GET", url);
-    xhr.onload = () => resolve(JSON.parse(xhr.responseText));
-    xhr.onerror = () => reject(xhr.statusText);
-    xhr.send();
-}).then((response) => {
-    console.log(response.content);
-    let fromWP = response.content;
-    return fromWP;
-});
 
 export class Home extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            content: 'Joe'
-        }
-    }
-
-    
     render() {
-        const content = this.state.content;
         return (
             <div >
                 <div className="bs-docs-featurette" id="content" tabIndex="-1">
@@ -48,4 +23,3 @@ export class Home extends Component {
         );
     }
 }
-//

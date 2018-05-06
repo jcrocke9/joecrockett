@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga';
 import {
     BrowserRouter as Router,
     Route,
     Link
 } from 'react-router-dom';
 import { Home } from './components/Home';
-import { Resume } from './components/Resume';
-import { About } from './components/About';
+import { Work } from './components/Work';
+
+ReactGA.initialize('UA-116194261-1');
+function fireTracking() {
+    ReactGA.pageview(window.location.hash);
+}
 
 class App extends Component {
     render() {
         return (
             <div>
-                <Router>
+                <Router onUpdate={fireTracking}>
                     <div>
                         <nav className="navbar navbar-default">
                             <div className="container-fluid">
@@ -31,15 +36,13 @@ class App extends Component {
                                 <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                     <ul className="nav navbar-nav">
                                         <li><Link to="/">Home</Link></li>
-                                        <li><Link to="/about">About</Link></li>
-                                        <li><Link to="/resume">Resume &amp; Work</Link></li>
+                                        <li><Link to="/work">Work</Link></li>
                                     </ul>
                                 </div>
                             </div>
                         </nav>
                         <Route exact path="/" component={Home} />
-                        <Route path="/about" component={About} />
-                        <Route path="/resume" component={Resume} />
+                        <Route path="/work" component={Work} />
                     </div>
                 </Router>
             </div>

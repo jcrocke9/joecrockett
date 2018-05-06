@@ -10,19 +10,10 @@ export class Resume extends Component {
             <div>
                 <div className="bs-docs-header" id="content" tabIndex="-1">
                     <div className="container">
-                        <h1>Work</h1>
+                        <h1>Resume</h1>
                     </div>
                 </div>
                 <div className="container bs-docs-container">
-                    <div className="Row">
-                        <h4><input onClick={this.linkedIn} type="button" className="btn btn-default" value="View my LinkedIn profile" /></h4>
-                    </div>
-                    <div className="Row">
-                        <h4><input onClick={this.github} type="button" className="btn btn-default" value="View my Github repositories" /></h4>
-                    </div>
-                    <div className="Row">
-                        <h4><input onClick={this.powershellGallery} type="button" className="btn btn-default" value="View my PowerShell modules" /></h4>
-                    </div>
                 </div>
             </div>
         );
