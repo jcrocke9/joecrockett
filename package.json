@@ -10,11 +10,13 @@
   "author": "Joe Crockett",
   "license": "ISC",
   "dependencies": {
+    "devicons": "^1.8.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-ga": "^2.5.0",
     "react-router-dom": "^4.1.1",
-    "react-scripts": "^1.0.10"
+    "react-scripts": "^1.0.10",
+    "simple-line-icons": "^2.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
