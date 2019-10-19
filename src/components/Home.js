@@ -10,7 +10,8 @@ export class Home extends Component {
                     <h2 className="bs-docs-featurette-title">SharePoint</h2>
                         <hr className="half-rule" />
 
-                        <p className="lead">The SharePoint Framework is an exciting new opportunity for modern web development. I see tremendous opportunities for React to engage audiences with elegant and interactive user interfaces.</p>
+                        <p className="lead">The SharePoint Framework is an exciting new opportunity for modern web development. </p>
+                        <p className="lead">Some <a href="https://github.com/jcrocke9/">web part</a> examples.</p>
                     </div>
                     <div className="container">
                         <h2 className="bs-docs-featurette-title">Exchange</h2>
