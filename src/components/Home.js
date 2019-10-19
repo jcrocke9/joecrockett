@@ -6,7 +6,7 @@ export class Home extends Component {
             <div >
                 <div className="bs-docs-featurette" id="content" tabIndex="-1">
                     <div className="container">
-                    <p className="lead">Office 365 Developer for a small city in the East US</p>    
+                    <p className="lead">Office 365 Developer in the Eastern US</p>    
                     <h2 className="bs-docs-featurette-title">SharePoint</h2>
                         <hr className="half-rule" />
 

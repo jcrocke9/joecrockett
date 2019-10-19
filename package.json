@@ -10,13 +10,16 @@
   "author": "Joe Crockett",
   "license": "ISC",
   "dependencies": {
+    "botframework-webchat": "^4.5.2",
     "devicons": "^1.8.0",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-ga": "^2.5.0",
-    "react-router-dom": "^4.1.1",
-    "react-scripts": "^1.0.10",
-    "simple-line-icons": "^2.4.1"
+    "eslint": "^6.5.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-ga": "^2.7.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^3.2.0",
+    "simple-line-icons": "^2.4.1",
+    "typescript": "^3.6.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,7 +27,16 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "devDependencies": {
-    "webpack": "^2.6.1"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

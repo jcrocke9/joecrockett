@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import { Home } from './components/Home';
 import { Work } from './components/Work';
+import { Bot } from './components/Bot';
 
 ReactGA.initialize('UA-116194261-1');
 function fireTracking() {
@@ -37,12 +38,14 @@ class App extends Component {
                                     <ul className="nav navbar-nav">
                                         <li><Link to="/">Home</Link></li>
                                         <li><Link to="/work">Work</Link></li>
+                                        <li><Link to="/bot">Bot</Link></li>
                                     </ul>
                                 </div>
                             </div>
                         </nav>
                         <Route exact path="/" component={Home} />
                         <Route path="/work" component={Work} />
+                        <Route path="/bot" component={Bot} />
                     </div>
                 </Router>
             </div>
