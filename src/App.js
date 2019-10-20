@@ -38,7 +38,7 @@ class App extends Component {
                                     <ul className="nav navbar-nav">
                                         <li><Link to="/">Home</Link></li>
                                         <li><Link to="/work">Work</Link></li>
-                                        <li><Link to="/bot">Bot</Link></li>
+                                        <li><Link to="/bot">State Trees Bot</Link></li>
                                     </ul>
                                 </div>
                             </div>

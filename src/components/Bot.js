@@ -10,18 +10,19 @@ export class Bot extends Component {
 
     render() {
         return (
-            <div>
+            <div >
                 <div className="bs-docs-header" id="content" tabIndex="-1">
                     <div className="container">
-                        <h1>Bot</h1>
+                        <h1>State Trees</h1>
                     </div>
                 </div>
                 <div className="container bs-docs-container">
-                    <ReactWebChat directLine={this.directLine} userID='YOUR_USER_ID' />
-                    
+                    <hr className="half-rule" />
+                    <p className="lead">Ask me about either a state or a tree: </p>
+                    <ReactWebChat directLine={this.directLine} userID='YOUR_USER_ID' styleOptions={{hideUploadButton: "true"}} />
+
                 </div>
             </div>
         );
     }
 }
-
