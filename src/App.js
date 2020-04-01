@@ -30,7 +30,7 @@ class App extends Component {
                                         <span className="icon-bar"></span>
                                         <span className="icon-bar"></span>
                                     </button>
-                                    <a className="navbar-brand" >Joe</a>
+                                    <a className="navbar-brand" ></a>
                                 </div>
 
 
@@ -38,14 +38,12 @@ class App extends Component {
                                     <ul className="nav navbar-nav">
                                         <li><Link to="/">Home</Link></li>
                                         <li><Link to="/work">Work</Link></li>
-                                        <li><Link to="/bot">State Trees Bot</Link></li>
                                     </ul>
                                 </div>
                             </div>
                         </nav>
                         <Route exact path="/" component={Home} />
                         <Route path="/work" component={Work} />
-                        <Route path="/bot" component={Bot} />
                     </div>
                 </Router>
             </div>
